@@ -29,6 +29,8 @@ navSlide();
 
 // Scroll header style change
 const header = document.querySelector('header');
+const nav = document.querySelector('nav');
+const ul = nav.querySelector('ul');
 const scrollChange = 100;
 
 window.addEventListener('scroll', () => {
@@ -36,9 +38,13 @@ window.addEventListener('scroll', () => {
     
     if (scrollPosition >= scrollChange) {
         header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        nav.style.padding = '0 5%';
+        ul.style.color = 'var(--primary-color)';
         header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     } else {
-        header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        header.style.backgroundColor = 'var(--secondary-color)';
+        nav.style.padding = '1.5rem 5%';
+        ul.style.color = 'inherit';
         header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     }
 });
