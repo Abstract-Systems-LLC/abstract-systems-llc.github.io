@@ -1,6 +1,6 @@
 # Absys Website
 
-This is the official repository for the Absys company website. Absys creates technology solutions for the open source community and businesses alike.
+This is the official repository for the Absys, or Abstract Systems company website. 
 
 ## Features
 
